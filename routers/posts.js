@@ -20,6 +20,11 @@ router.put('/:id', (req, res) => {
     res.send(`Aggiornamento del post ${id}`);
 });
 
+router.delete('/:id', (req, res) => {
+    const id = req.params.id;
+    res.send(`Cancellazione del post ${id}`);
+});
+
 
 
 module.exports = router;
