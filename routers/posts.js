@@ -11,4 +11,9 @@ router.get('/:id', (req, res) => {
     res.send(`Dettagli del post ${id}`);
 });
 
+router.post('/', (req, res) => {
+    res.send('Creazione di un nuovo post');
+});
+
+
 module.exports = router;
