@@ -5,5 +5,11 @@ const postsRouter = require('./routers/posts');
 app.use('/posts', postsRouter);
 
 app.get('/', (req, res) => {
-    res.send('Bnevenuto nel blog!');
+    res.send('Benvenuto nel blog!');
+});
+
+const port = 3000;
+
+app.listen(port, () => {
+    console.log(`App attiva su http://localhost:${port}`);
 });
